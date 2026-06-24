@@ -1,0 +1,368 @@
+.main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sectionTag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a4b8c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.sectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f2a4a;
+    margin-bottom: 12px;
+}
+
+.sectionSubtitle {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.categoryCard {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 0.25s ease;
+}
+
+.categoryCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(15, 42, 74, 0.1);
+    border-color: #2d6cc0;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cardIcon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.cardTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f2a4a;
+    line-height: 1.3;
+}
+
+.cardList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.cardListItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.cardListItem svg {
+    flex-shrink: 0;
+}
+
+.cardFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 14px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.standardsBadge {
+    font-size: 12px;
+    font-weight: 500;
+    color: #64748b;
+    background: #f0f4f8;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.cardLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a4b8c;
+    transition: gap 0.2s ease;
+}
+
+.cardLink:hover {
+    gap: 10px;
+    color: #2d6cc0;
+}
+
+.servicesAction {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btnOutline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border: 2px solid #1a4b8c;
+    color: #1a4b8c;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btnOutline:hover {
+    background-color: #1a4b8c;
+    color: #ffffff;
+}
+
+.btnPrimary {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 8px;
+    padding: 12px 28px;
+    background-color: #1a4b8c;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    margin-top: 8px;
+}
+
+.btnPrimary:hover {
+    background-color: #0f2a4a;
+}
+
+.aboutSection {
+    padding: 64px 0;
+    background-color: #ffffff;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutContent .sectionTag {
+    text-align: left;
+}
+
+.aboutContent .sectionTitle {
+    text-align: left;
+    font-size: 28px;
+}
+
+.aboutText {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.aboutImage {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.12);
+}
+
+.aboutPhoto {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.partnersSection {
+    padding: 64px 0;
+}
+
+.partnersList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.partnerBadge {
+    padding: 12px 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0f2a4a;
+    transition: all 0.2s ease;
+}
+
+.partnerBadge:hover {
+    border-color: #1a4b8c;
+    box-shadow: 0 4px 12px rgba(26, 75, 140, 0.1);
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+    .categoriesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .servicesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .aboutContent .sectionTag,
+    .aboutContent .sectionTitle {
+        text-align: center;
+    }
+
+    .aboutContent .btnPrimary {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .categoriesGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .categoriesGrid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .categoryCard {
+        padding: 20px 16px;
+    }
+
+    .cardTitle {
+        font-size: 14px;
+    }
+
+    .sectionTitle {
+        font-size: 24px;
+    }
+
+    .sectionSubtitle {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .sectionHeader {
+        margin-bottom: 28px;
+    }
+
+    .aboutSection {
+        padding: 40px 0;
+    }
+
+    .aboutPhoto {
+        height: 220px;
+    }
+
+    .aboutContent .sectionTitle {
+        font-size: 22px;
+    }
+
+    .aboutText {
+        font-size: 14px;
+    }
+
+    .btnOutline,
+    .btnPrimary {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+
+    .partnersSection {
+        padding: 40px 0;
+    }
+
+    .partnerBadge {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .partnersList {
+        gap: 8px;
+    }
+}

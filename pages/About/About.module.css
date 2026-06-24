@@ -1,0 +1,294 @@
+.main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.pageHeader {
+    background: linear-gradient(135deg, #0f2a4a 0%, #1a4b8c 100%);
+    padding: 48px 0;
+    text-align: center;
+}
+
+.pageTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.pageSubtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.sectionTag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a4b8c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.blockTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f2a4a;
+}
+
+.aboutBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.aboutText p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.aboutImageBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aboutImage {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.12);
+}
+
+.imageCaption {
+    font-size: 13px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.activitiesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.activityItem {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    background: #f0f4f8;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.activityIcon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #1a4b8c, #2d6cc0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.activityItem h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f2a4a;
+    margin-bottom: 6px;
+}
+
+.activityItem p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.labsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.labCard {
+    background: #f0f4f8;
+    border-radius: 12px;
+    padding: 28px 24px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.2s ease;
+}
+
+.labCard:hover {
+    border-color: #1a4b8c;
+    box-shadow: 0 4px 16px rgba(26, 75, 140, 0.08);
+}
+
+.labNumber {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #1a4b8c, #2d6cc0);
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.labTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f2a4a;
+    line-height: 1.4;
+}
+
+.labDesc {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.labInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.labInfo span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.labInfo svg {
+    color: #1a4b8c;
+    flex-shrink: 0;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 900px) {
+    .aboutBlock {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .teamGrid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .labsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .activitiesList {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .pageHeader {
+        padding: 32px 0;
+    }
+
+    .pageTitle {
+        font-size: 26px;
+    }
+
+    .pageSubtitle {
+        font-size: 14px;
+    }
+
+    .blockTitle {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 36px 0;
+    }
+
+    .sectionHeader {
+        margin-bottom: 24px;
+    }
+
+    .aboutText p {
+        font-size: 14px;
+    }
+
+    .activityItem {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .activityIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .activityItem h3 {
+        font-size: 14px;
+    }
+
+    .activityItem p {
+        font-size: 13px;
+    }
+
+    .labCard {
+        padding: 20px 18px;
+    }
+
+    .labTitle {
+        font-size: 14px;
+    }
+
+    .labDesc {
+        font-size: 13px;
+    }
+
+    .labInfo span {
+        font-size: 12px;
+    }
+}
