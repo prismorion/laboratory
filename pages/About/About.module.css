@@ -156,6 +156,13 @@
     justify-content: center;
     gap: 14px;
     box-shadow: 0 8px 24px rgba(15, 42, 74, 0.06);
+    transition: all 0.25s ease;
+}
+
+.labStructure:hover .labInfoCard {
+    transform: translateY(-4px);
+    border-color: #2d6cc0;
+    box-shadow: 0 12px 32px rgba(15, 42, 74, 0.08);
 }
 
 .labInfoTitle {
