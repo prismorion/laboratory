@@ -25,11 +25,11 @@
 }
 
 .summarySection {
-    padding: 48px 0 24px;
+    padding: 48px 0;
 }
 
 .documentSection {
-    padding: 0 0 48px;
+    padding: 24px 0 48px;
 }
 
 .sectionHeader {
@@ -164,11 +164,11 @@
     }
 
     .summarySection {
-        padding: 32px 0 16px;
+        padding: 32px 0;
     }
 
     .documentSection {
-        padding: 0 0 32px;
+        padding: 24px 0 32px;
     }
 
     .sectionHeader {
