@@ -138,6 +138,15 @@
     gap: 24px;
 }
 
+.structureIntro {
+    max-width: 900px;
+    margin: -12px auto 32px;
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
 .labStructure {
     display: grid;
     grid-template-columns: minmax(280px, 420px) 1fr;
@@ -266,6 +275,12 @@
 
     .aboutText p {
         font-size: 14px;
+    }
+
+    .structureIntro {
+        margin: -8px auto 24px;
+        font-size: 14px;
+        text-align: left;
     }
 
     .activityItem {

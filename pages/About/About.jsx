@@ -176,6 +176,12 @@ function About() {
                             <span className={styles.sectionTag}>Команда</span>
                             <h2 className={styles.blockTitle}>Структура</h2>
                         </div>
+                        <p className={styles.structureIntro}>
+                            В штат Испытательного центра входят специалисты и эксперты, проводящие судебные экспертизы
+                            и обеспечивающие решение спорных вопросов относительно производства, идентификации,
+                            оценки качества и безопасности масложировой, молочной, винодельческой и
+                            парфюмерно-косметической продукции.
+                        </p>
                         <div className={styles.teamGrid}>
                             {leadership.map((person, index) => (
                                 <TeamCard key={index} {...person} />
