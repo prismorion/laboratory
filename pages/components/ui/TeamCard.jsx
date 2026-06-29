@@ -1,8 +1,8 @@
 import styles from '../styles/TeamCard.module.css';
 
-function TeamCard({ photo, name, position, degree, description }) {
+function TeamCard({ photo, name, position, degree, description, className = '' }) {
     return (
-        <div className={styles.card}>
+        <div className={`${styles.card} ${className}`}>
             <div className={styles.photoWrapper}>
                 {photo ? (
                     <img src={photo} alt={name} className={styles.photo} />

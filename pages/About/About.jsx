@@ -187,7 +187,7 @@ function About() {
 
                             return (
                                 <div key={lab.title} className={styles.labStructure}>
-                                    <TeamCard {...person} />
+                                    <TeamCard {...person} className={styles.labHeadCard} />
                                     <div className={styles.labInfoCard}>
                                         <span className={styles.sectionTag}>Лаборатория</span>
                                         <h3 className={styles.labInfoTitle}>{lab.title}</h3>

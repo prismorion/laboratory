@@ -141,28 +141,43 @@
 .labStructure {
     display: grid;
     grid-template-columns: minmax(280px, 420px) 1fr;
-    gap: 24px;
+    gap: 0;
     align-items: stretch;
     margin-top: 32px;
-}
-
-.labInfoCard {
     background: #ffffff;
     border: 1px solid #dbeafe;
     border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.06);
+    transition: all 0.25s ease;
+}
+
+.labStructure:hover {
+    transform: translateY(-4px);
+    border-color: #2d6cc0;
+    box-shadow: 0 12px 32px rgba(15, 42, 74, 0.08);
+}
+
+.labHeadCard {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.labStructure:hover .labHeadCard {
+    transform: none;
+    box-shadow: none;
+}
+
+.labInfoCard {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 14px;
-    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.06);
-    transition: all 0.25s ease;
-}
-
-.labStructure:hover .labInfoCard {
-    transform: translateY(-4px);
-    border-color: #2d6cc0;
-    box-shadow: 0 12px 32px rgba(15, 42, 74, 0.08);
 }
 
 .labInfoTitle {
