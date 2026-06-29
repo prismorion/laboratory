@@ -96,10 +96,6 @@ function Home() {
 
                 <section className={styles.section}>
                     <div className={styles.container}>
-                        <div className={styles.sectionHeader}>
-                            <span className={styles.sectionTag}>Объекты испытаний</span>
-                            <h2 className={styles.sectionTitle}>Виды продукции</h2>
-                        </div>
                         <div className={styles.categoriesGrid}>
                             {productCategories.map((cat, index) => (
                                 <div key={index} className={styles.categoryCard}>
