@@ -13,7 +13,7 @@ function Accreditation() {
                     </div>
                 </section>
 
-                <section className={styles.section}>
+                <section className={styles.summarySection}>
                     <div className={styles.container}>
                         <div className={styles.accreditBanner}>
                             <div className={styles.accreditIcon}>
@@ -38,7 +38,7 @@ function Accreditation() {
                     </div>
                 </section>
 
-                <section className={styles.section} style={{ backgroundColor: '#ffffff' }}>
+                <section className={styles.documentSection}>
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
                             <span className={styles.sectionTag}>Документ</span>

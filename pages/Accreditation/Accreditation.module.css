@@ -18,16 +18,18 @@
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 8px;
-}
-
-.pageSubtitle {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .section {
     padding: 48px 0;
+}
+
+.summarySection {
+    padding: 48px 0 24px;
+}
+
+.documentSection {
+    padding: 0 0 48px;
 }
 
 .sectionHeader {
@@ -99,41 +101,6 @@
     line-height: 1.6;
 }
 
-.capabilitiesGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.capCard {
-    background: #f0f4f8;
-    border-radius: 12px;
-    padding: 24px;
-    border: 1px solid #e2e8f0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.capNumber {
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a4b8c;
-    line-height: 1;
-}
-
-.capTitle {
-    font-size: 15px;
-    font-weight: 600;
-    color: #0f2a4a;
-}
-
-.capDesc {
-    font-size: 14px;
-    color: #64748b;
-    line-height: 1.5;
-}
-
 .attestatWrapper {
     display: flex;
     flex-direction: column;
@@ -165,56 +132,8 @@
     height: auto;
 }
 
-.attestatDownload {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    background: #10b981;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
-
-.attestatDownload:hover {
-    background: #34d399;
-    transform: translateY(-1px);
-}
-
-.standardsList {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.standardItem {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 16px 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
-    font-size: 15px;
-    color: #4a5568;
-    line-height: 1.5;
-}
-
-.standardItem svg {
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
 /* ===== Tablet ===== */
 @media (max-width: 900px) {
-    .capabilitiesGrid {
-        grid-template-columns: 1fr;
-    }
-
     .accreditBanner {
         flex-direction: column;
         text-align: center;
@@ -236,16 +155,20 @@
         font-size: 26px;
     }
 
-    .pageSubtitle {
-        font-size: 14px;
-    }
-
     .sectionTitle {
         font-size: 22px;
     }
 
     .section {
         padding: 32px 0;
+    }
+
+    .summarySection {
+        padding: 32px 0 16px;
+    }
+
+    .documentSection {
+        padding: 0 0 32px;
     }
 
     .sectionHeader {
@@ -270,29 +193,4 @@
         font-size: 14px;
     }
 
-    .capCard {
-        padding: 20px 18px;
-    }
-
-    .capNumber {
-        font-size: 24px;
-    }
-
-    .capTitle {
-        font-size: 14px;
-    }
-
-    .capDesc {
-        font-size: 13px;
-    }
-
-    .standardItem {
-        padding: 14px 16px;
-        font-size: 13px;
-        gap: 10px;
-    }
-
-    .standardsList {
-        gap: 10px;
-    }
 }

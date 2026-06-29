@@ -109,7 +109,7 @@ function About() {
                     </div>
                 </section>
 
-                <section className={styles.section} style={{ backgroundColor: '#ffffff' }}>
+                <section className={styles.section}>
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
                             <span className={styles.sectionTag}>Основные направления</span>

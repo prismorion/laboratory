@@ -95,7 +95,7 @@ function Contacts() {
                     </div>
                 </section>
 
-                <section className={styles.section} style={{ backgroundColor: '#ffffff', paddingTop: '32px' }}>
+                <section className={styles.contactsSection}>
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
                             <span className={styles.sectionTag}>Сотрудники</span>

@@ -18,16 +18,15 @@
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 8px;
-}
-
-.pageSubtitle {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .section {
     padding: 48px 0;
+}
+
+.contactsSection {
+    padding: 32px 0 48px;
+    background-color: #ffffff;
 }
 
 .sectionHeader {
@@ -257,16 +256,16 @@
         font-size: 26px;
     }
 
-    .pageSubtitle {
-        font-size: 14px;
-    }
-
     .sectionTitle {
         font-size: 22px;
     }
 
     .section {
         padding: 32px 0;
+    }
+
+    .contactsSection {
+        padding: 24px 0 32px;
     }
 
     .sectionHeader {

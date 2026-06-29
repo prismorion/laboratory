@@ -91,24 +91,6 @@ function Services() {
                     </div>
                 </section>
 
-                <section className={styles.section} style={{ paddingTop: 0 }}>
-                    <div className={styles.container}>
-                        <div className={styles.sectionHeader}>
-                            <span className={styles.sectionTag}>Компетенции</span>
-                            <h2 className={styles.sectionTitle}>Виды проводимых работ</h2>
-                        </div>
-                        <div className={styles.capabilitiesGrid}>
-                            {capabilities.map((cap, index) => (
-                                <div key={index} className={styles.capCard}>
-                                    <div className={styles.capNumber}>{String(index + 1).padStart(2, '0')}</div>
-                                    <h3 className={styles.capTitle}>{cap.title}</h3>
-                                    <p className={styles.capDesc}>{cap.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
                 <section className={styles.equipmentSection}>
                     <div className={styles.container}>
                         <div className={styles.equipmentBlock}>
@@ -133,6 +115,24 @@ function Services() {
                                     <span key={method} className={styles.methodBadge}>{method}</span>
                                 ))}
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className={styles.sectionCompact}>
+                    <div className={styles.container}>
+                        <div className={styles.sectionHeader}>
+                            <span className={styles.sectionTag}>Компетенции</span>
+                            <h2 className={styles.sectionTitle}>Виды проводимых работ</h2>
+                        </div>
+                        <div className={styles.capabilitiesGrid}>
+                            {capabilities.map((cap, index) => (
+                                <div key={index} className={styles.capCard}>
+                                    <div className={styles.capNumber}>{String(index + 1).padStart(2, '0')}</div>
+                                    <h3 className={styles.capTitle}>{cap.title}</h3>
+                                    <p className={styles.capDesc}>{cap.description}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
