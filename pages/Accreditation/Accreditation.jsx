@@ -48,9 +48,6 @@ function Accreditation() {
                 <section className={styles.pageHeader}>
                     <div className={styles.container}>
                         <h1 className={styles.pageTitle}>Аккредитация</h1>
-                        <p className={styles.pageSubtitle}>
-                            Сведения об аккредитации испытательного центра
-                        </p>
                     </div>
                 </section>
 

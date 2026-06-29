@@ -53,9 +53,6 @@ function Contacts() {
                 <section className={styles.pageHeader}>
                     <div className={styles.container}>
                         <h1 className={styles.pageTitle}>Контакты</h1>
-                        <p className={styles.pageSubtitle}>
-                            Свяжитесь с нами для получения консультации или оформления заказа
-                        </p>
                     </div>
                 </section>
 

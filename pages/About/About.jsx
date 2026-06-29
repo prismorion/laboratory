@@ -76,9 +76,6 @@ function About() {
                 <section className={styles.pageHeader}>
                     <div className={styles.container}>
                         <h1 className={styles.pageTitle}>О нас</h1>
-                        <p className={styles.pageSubtitle}>
-                            Испытательный центр Кубанского государственного технологического университета
-                        </p>
                     </div>
                 </section>
 

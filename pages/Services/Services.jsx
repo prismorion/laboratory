@@ -41,9 +41,6 @@ function Services() {
                 <section className={styles.pageHeader}>
                     <div className={styles.container}>
                         <h1 className={styles.pageTitle}>Услуги</h1>
-                        <p className={styles.pageSubtitle}>
-                            Широкий спектр лабораторных испытаний и экспертиз
-                        </p>
                     </div>
                 </section>
 
