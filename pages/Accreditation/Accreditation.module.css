@@ -81,70 +81,20 @@
     flex-shrink: 0;
 }
 
+.accreditInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .accreditInfo h2 {
     font-size: 22px;
     font-weight: 700;
     color: #0f2a4a;
-    margin-bottom: 8px;
 }
 
 .accreditInfo p {
     font-size: 15px;
-    color: #64748b;
-    line-height: 1.6;
-}
-
-.docsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.docCard {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 28px 24px;
-    border: 1px solid #e2e8f0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all 0.2s ease;
-}
-
-.docCard:hover {
-    border-color: #2d6cc0;
-    box-shadow: 0 4px 16px rgba(26, 75, 140, 0.08);
-}
-
-.docIcon {
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, #eef4fc, #dbeafe);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1a4b8c;
-}
-
-.docTitle {
-    font-size: 16px;
-    font-weight: 600;
-    color: #0f2a4a;
-}
-
-.docNumber {
-    font-size: 13px;
-    font-weight: 600;
-    color: #10b981;
-    background: rgba(16, 185, 129, 0.1);
-    padding: 3px 10px;
-    border-radius: 4px;
-    width: fit-content;
-}
-
-.docDesc {
-    font-size: 14px;
     color: #64748b;
     line-height: 1.6;
 }
@@ -261,7 +211,6 @@
 
 /* ===== Tablet ===== */
 @media (max-width: 900px) {
-    .docsGrid,
     .capabilitiesGrid {
         grid-template-columns: 1fr;
     }
@@ -319,18 +268,6 @@
 
     .accreditInfo p {
         font-size: 14px;
-    }
-
-    .docCard {
-        padding: 20px 18px;
-    }
-
-    .docTitle {
-        font-size: 15px;
-    }
-
-    .docDesc {
-        font-size: 13px;
     }
 
     .capCard {
