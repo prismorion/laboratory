@@ -65,9 +65,6 @@ const labs = [
     },
 ];
 
-const featuredLabHead = labHeads[0];
-const featuredLab = labs[0];
-
 function About() {
     return (
         <>
@@ -185,62 +182,35 @@ function About() {
                             ))}
                         </div>
 
-                        <div className={styles.labStructure}>
-                            <TeamCard {...featuredLabHead} />
-                            <div className={styles.labInfoCard}>
-                                <span className={styles.sectionTag}>Лаборатория</span>
-                                <h3 className={styles.labInfoTitle}>{featuredLab.title}</h3>
-                                <p className={styles.labInfoDesc}>{featuredLab.description}</p>
-                                <div className={styles.labInfoList}>
-                                    <span>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                            <circle cx="12" cy="10" r="3"/>
-                                        </svg>
-                                        {featuredLab.address}
-                                    </span>
-                                    <span>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                        </svg>
-                                        {featuredLab.phone}
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                        {labHeads.map((person, index) => {
+                            const lab = labs[index];
 
-                <section className={styles.section} style={{ backgroundColor: '#ffffff' }}>
-                    <div className={styles.container}>
-                        <div className={styles.sectionHeader}>
-                            <span className={styles.sectionTag}>Структура</span>
-                            <h2 className={styles.blockTitle}>Наши лаборатории</h2>
-                        </div>
-                        <div className={styles.labsGrid}>
-                            {labs.map((lab, index) => (
-                                <div key={index} className={styles.labCard}>
-                                    <div className={styles.labNumber}>{index + 1}</div>
-                                    <h3 className={styles.labTitle}>{lab.title}</h3>
-                                    <p className={styles.labDesc}>{lab.description}</p>
-                                    <div className={styles.labInfo}>
-                                        <span>
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                                <circle cx="12" cy="10" r="3"/>
-                                            </svg>
-                                            {lab.address}
-                                        </span>
-                                        <span>
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                            </svg>
-                                            {lab.phone}
-                                        </span>
+                            return (
+                                <div key={lab.title} className={styles.labStructure}>
+                                    <TeamCard {...person} />
+                                    <div className={styles.labInfoCard}>
+                                        <span className={styles.sectionTag}>Лаборатория</span>
+                                        <h3 className={styles.labInfoTitle}>{lab.title}</h3>
+                                        <p className={styles.labInfoDesc}>{lab.description}</p>
+                                        <div className={styles.labInfoList}>
+                                            <span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                                    <circle cx="12" cy="10" r="3"/>
+                                                </svg>
+                                                {lab.address}
+                                            </span>
+                                            <span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                                </svg>
+                                                {lab.phone}
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            );
+                        })}
                     </div>
                 </section>
             </main>
