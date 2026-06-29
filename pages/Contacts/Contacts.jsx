@@ -94,18 +94,6 @@ function Contacts() {
                                 <p><a href="mailto:ktgr11@mail.ru">ktgr11@mail.ru</a></p>
                                 <span className={styles.contactDetail}>Ответим в течение рабочего дня</span>
                             </div>
-                            <div className={styles.mainContactCard}>
-                                <div className={styles.contactIcon}>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="2" y1="12" x2="22" y2="12"/>
-                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                                    </svg>
-                                </div>
-                                <h3>Сайт ЦКП</h3>
-                                <p><a href="https://fct.kubstu.ru" target="_blank" rel="noopener noreferrer">fct.kubstu.ru</a></p>
-                                <span className={styles.contactDetail}>Исследовательский центр пищевых и химических технологий</span>
-                            </div>
                         </div>
                     </div>
                 </section>

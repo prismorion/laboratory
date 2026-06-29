@@ -78,14 +78,7 @@ function NavBar() {
                                 {link.label}
                             </Link>
                         ))}
-                        <a href="https://fct.kubstu.ru" target="_blank" rel="noopener noreferrer" className={styles.siteLinkMobile}>
-                            fct.kubstu.ru
-                        </a>
                     </div>
-
-                    <a href="https://fct.kubstu.ru" target="_blank" rel="noopener noreferrer" className={styles.siteLink}>
-                        fct.kubstu.ru
-                    </a>
                 </div>
             </nav>
             {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)} />}

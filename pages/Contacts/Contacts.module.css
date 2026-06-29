@@ -10,7 +10,7 @@
 
 .pageHeader {
     background: linear-gradient(135deg, #0f2a4a 0%, #1a4b8c 100%);
-    padding: 48px 0;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -53,7 +53,7 @@
 
 .mainContactsGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -250,7 +250,7 @@
     }
 
     .pageHeader {
-        padding: 32px 0;
+        padding: 24px 0;
     }
 
     .pageTitle {

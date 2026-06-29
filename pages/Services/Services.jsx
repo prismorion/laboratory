@@ -59,14 +59,17 @@ function Services() {
                                     <polyline points="10 9 9 9 8 9"/>
                                 </svg>
                                 <div>
-                                    <h3>Прайс-лист на услуги 2026</h3>
+                                    <h3>Прайс-лист на услуги</h3>
                                     <p>
                                         Полный перечень определяемых показателей, методов испытаний и стоимости услуг
+                                    </p>
+                                    <p className={styles.priceNotice}>
+                                        Не является публичной офертой, стоимость уточняйте по телефону или по почте.
                                     </p>
                                 </div>
                             </div>
                             <a
-                                href="/docs/price-2026.pdf"
+                                href="/docs/price.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.priceBtn}

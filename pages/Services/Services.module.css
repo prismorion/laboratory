@@ -10,7 +10,7 @@
 
 .pageHeader {
     background: linear-gradient(135deg, #0f2a4a 0%, #1a4b8c 100%);
-    padding: 48px 0;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -60,14 +60,16 @@
 }
 
 .priceBlock {
-    background: linear-gradient(135deg, #1a4b8c, #2d6cc0);
+    background: #ffffff;
     border-radius: 16px;
     padding: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    color: #ffffff;
+    color: #0f2a4a;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.07);
 }
 
 .priceInfo {
@@ -79,6 +81,7 @@
 .priceInfo svg {
     flex-shrink: 0;
     opacity: 0.9;
+    color: #1a4b8c;
 }
 
 .priceInfo h3 {
@@ -89,7 +92,13 @@
 
 .priceInfo p {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #64748b;
+}
+
+.priceNotice {
+    margin-top: 8px;
+    max-width: 640px;
+    font-weight: 600;
 }
 
 .priceBtn {
@@ -97,7 +106,7 @@
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background: #10b981;
+    background: #1a4b8c;
     color: #ffffff;
     font-weight: 600;
     font-size: 14px;
@@ -108,7 +117,7 @@
 }
 
 .priceBtn:hover {
-    background: #34d399;
+    background: #2d6cc0;
     transform: translateY(-1px);
 }
 
@@ -256,11 +265,13 @@
 }
 
 .ctaBlock {
-    background: #0f2a4a;
+    background: #ffffff;
     border-radius: 16px;
     padding: 48px;
     text-align: center;
-    color: #ffffff;
+    color: #0f2a4a;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.07);
 }
 
 .ctaBlock h2 {
@@ -271,7 +282,7 @@
 
 .ctaBlock p {
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #64748b;
     margin-bottom: 24px;
 }
 
@@ -286,7 +297,7 @@
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background: #10b981;
+    background: #1a4b8c;
     color: #ffffff;
     font-weight: 600;
     font-size: 15px;
@@ -295,7 +306,7 @@
 }
 
 .ctaBtn:hover {
-    background: #34d399;
+    background: #2d6cc0;
 }
 
 .ctaBtnOutline {
@@ -303,8 +314,8 @@
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
+    border: 2px solid #bfd3ef;
+    color: #1a4b8c;
     font-weight: 600;
     font-size: 15px;
     border-radius: 8px;
@@ -312,8 +323,8 @@
 }
 
 .ctaBtnOutline:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: #eef4fc;
+    border-color: #2d6cc0;
 }
 
 /* ===== Tablet ===== */
@@ -359,7 +370,7 @@
     }
 
     .pageHeader {
-        padding: 32px 0;
+        padding: 24px 0;
     }
 
     .pageTitle {

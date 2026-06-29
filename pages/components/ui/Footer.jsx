@@ -55,9 +55,6 @@ function Footer() {
 
                 <div className={styles.bottom}>
                     <span>&copy; {new Date().getFullYear()} Испытательный центр ФГБОУ ВО «КубГТУ». Все права защищены.</span>
-                    <a href="https://fct.kubstu.ru" target="_blank" rel="noopener noreferrer" className={styles.externalLink}>
-                        fct.kubstu.ru
-                    </a>
                 </div>
             </div>
         </footer>

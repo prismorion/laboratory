@@ -45,6 +45,15 @@ function Accreditation() {
         <>
             <NavBar />
             <main className={styles.main}>
+                <section className={styles.pageHeader}>
+                    <div className={styles.container}>
+                        <h1 className={styles.pageTitle}>Аккредитация</h1>
+                        <p className={styles.pageSubtitle}>
+                            Сведения об аккредитации испытательного центра
+                        </p>
+                    </div>
+                </section>
+
                 <section className={styles.section}>
                     <div className={styles.container}>
                         <div className={styles.accreditBanner}>
@@ -103,19 +112,6 @@ function Accreditation() {
                                     alt="Аттестат аккредитации RA.RU.21КБ38"
                                     className={styles.attestatImage}
                                 />
-                            </a>
-                            <a
-                                href="/docs/attestat-akkreditacii.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.attestatDownload}
-                            >
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                    <polyline points="7 10 12 15 17 10"/>
-                                    <line x1="12" y1="15" x2="12" y2="3"/>
-                                </svg>
-                                Скачать PDF
                             </a>
                         </div>
                     </div>
