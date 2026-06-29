@@ -33,6 +33,15 @@ const capabilities = [
     },
 ];
 
+const analysisMethods = [
+    'Хроматографические',
+    'Спектральные',
+    'Элементные',
+    'Кондуктометрические',
+    'ЯМР',
+    'и другие',
+];
+
 function Services() {
     return (
         <>
@@ -96,6 +105,34 @@ function Services() {
                                     <p className={styles.capDesc}>{cap.description}</p>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </section>
+
+                <section className={styles.equipmentSection}>
+                    <div className={styles.container}>
+                        <div className={styles.equipmentBlock}>
+                            <div className={styles.equipmentContent}>
+                                <span className={styles.sectionTag}>Оборудование</span>
+                                <h2 className={styles.equipmentTitle}>Современная аналитическая база</h2>
+                                <p>
+                                    Испытательный центр оснащен{' '}
+                                    <a
+                                        href="https://fct.kubstu.ru/equipment/scientific"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        современным аналитическим оборудованием
+                                    </a>
+                                    , позволяющим на высоком уровне решать задачи по оценке соответствия и проводить
+                                    экспертные исследования, реализуя следующие методы анализа:
+                                </p>
+                            </div>
+                            <div className={styles.methodsList}>
+                                {analysisMethods.map((method) => (
+                                    <span key={method} className={styles.methodBadge}>{method}</span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </section>
